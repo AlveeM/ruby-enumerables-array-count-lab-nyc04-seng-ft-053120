@@ -5,8 +5,8 @@ def count_strings(array)
   end
 end
 
-array = [1, "hello", [], 5.01, "world", :name, { a: 1 }]
-puts count_strings(array)
+array_strings = [1, "hello", [], 5.01, "world", :name, { a: 1 }]
+puts count_strings(array_strings)
 
 def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided array using the count enumerable
@@ -14,3 +14,6 @@ def count_empty_strings(array)
     el == ""
   end
 end
+
+array_empty = array = [ "", "Hello", 4, [], "", "" ]
+puts count_empty_strings(array_empty)
